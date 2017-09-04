@@ -42,7 +42,7 @@ for i in range(len(array_of_pos)):
         substring = string[pos + 14 :]
     #Gc is calculated
     gc_content = calculate_gc(substring)
-    #Gc is checked whether it is the highest
+    #Gc is checked to know whether it is the highest
     if(maximum_gc < gc_content):
         maximum_gc = gc_content
         maximum_gc_id = ID
