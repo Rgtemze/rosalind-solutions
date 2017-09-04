@@ -11,15 +11,11 @@ string = 'GTGGTTACGCTCCCGGGGGGGTTCTACGTGCAGATACTGTTCGGGAAGAAGGAGGCACGTCAGGGAGCGC
 #Take the reverse
 reversed_string = string[::-1]
 
+#Create a dictionary
+complement_dict = {'A':'T','T':'A','G':'C','C':'G'}
+
 #Take the compelement of the reverse
 complement_reversed_string = ""
 for base in reversed_string:
-    if(base == 'A'):
-        complement_reversed_string += 'T'
-    if(base == 'C'):
-        complement_reversed_string += 'G'
-    if(base == 'G'):
-        complement_reversed_string += 'C'
-    if(base == 'T'):
-        complement_reversed_string += 'A'
+    complement_reversed_string += complement_dict[base]
 print(complement_reversed_string)
