@@ -1,5 +1,5 @@
 # Rosalind Solutions
-This repository includes nice solutions for ROSALIND?
+This repository includes nice solutions written in Python for ROSALIND 
 ## What is ROSALIND?
 In my words, ROSALIND is a coding platform where many biological challenges are awating to be solved programatically.
 According to ROSALIND web-site(http://rosalind.info/about/), 'To make learning bioinformatics fun and easy, we have founded Rosalind, a platform for learning bioinformatics through problem solving'
