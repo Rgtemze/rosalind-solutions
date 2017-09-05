@@ -1,7 +1,7 @@
 # Rosalind Solutions
 This repository includes nice solutions written in Python for ROSALIND by me.<br>*New solutions will be uploaded on a daily basis.*
 ## What is my aim?
-I wanted to improve my Python skills and learn more about bioinformatics.
+On the occasion of ROSALIND, I want to improve my Python skills and learn more about bioinformatics.
 ## Who is Rosalind Franklin?
 From Wikipedia(https://en.wikipedia.org/wiki/Rosalind_Franklin), Rosalind Elsie Franklin was an English chemist and X-ray crystallographer who made contributions to the understanding of **the molecular structures of DNA (deoxyribonucleic acid), RNA (ribonucleic acid), viruses, coal, and graphite.** Although her works on coal and viruses were appreciated in her lifetime, **her contributions to the discovery of the structure of DNA were largely recognised posthumously.**
 ## What is ROSALIND?
