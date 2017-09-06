@@ -11,7 +11,7 @@ k = 5
 #On the very first month all we have is one unmature pair
 prior_pair_reproductive = 0
 prior_pair_child = 1
-#From 2nd day thorough nth day
+#From 2nd day through nth day
 for _ in range(2, n + 1):
     
     #Pairs that were child previous month will become reproductive
