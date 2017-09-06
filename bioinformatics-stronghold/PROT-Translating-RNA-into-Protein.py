@@ -16,6 +16,6 @@ for pos_of_codon in range(0, len(string), 3):
     #If the codon corresponds to stop codon translation will stop
     if rna_to_aminoacid_dictionary[codon] == 'STOP':
         break
-    #Which ever aminoacid rna corresponds to will be added to the sequence
+    #Whichever aminoacid, rna corresponds to,will be added to the sequence
     aminoacid_sequence += rna_to_aminoacid_dictionary[codon]
 print(aminoacid_sequence)
