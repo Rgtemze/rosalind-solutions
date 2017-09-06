@@ -1,5 +1,5 @@
 # Rosalind Solutions
-This repository includes nice solutions written in Python for ROSALIND by me.<br>*New solutions will be uploaded on a daily basis.*
+This repository includes nice and heavily-commented solutions written in Python for ROSALIND by me.<br>*New solutions will be uploaded on a daily basis.*
 ## What is my aim?
 On the occasion of ROSALIND, I want to improve my Python skills and learn more about bioinformatics.
 ## Who is Rosalind Franklin?
