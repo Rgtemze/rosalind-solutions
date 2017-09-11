@@ -5,8 +5,6 @@ Created on Sat Sep  9 10:26:10 2017
 @author: ASUS
 This code snippet finds the open reading frames and prints possible amino acid sequences
 """
-
-
 #Below function is inspired from the REVC-Complementing-a-Strand-of-DNA.py
 def take_reverse_complement(string):
     #Take the reverse
@@ -44,7 +42,6 @@ for reverse_or_direct_index in range(2):
     length = len(mrna_sequence)
     #Three possible reading frame will be checked
     for j in range(3):
-        
         
         last_codon_end = length
         #Very first loop is the standart one
@@ -90,8 +87,7 @@ for seq in open_frame_array:
 for seq in open_frame_protein_array:
     for i in range(1, len(seq)):    
         if seq[i] == "M":
-            result = seq[i:]
-            open_frame_protein_array.append(result)
+            open_frame_protein_array.append(seq[i])
 #Get rid of duplicates
 open_frame_protein_array = list(set(open_frame_protein_array))
 
