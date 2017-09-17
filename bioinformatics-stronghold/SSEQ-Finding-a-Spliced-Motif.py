@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Sep 17 10:43:46 2017
+
+@author: ASUS
+This code snippet finds the given spliced motif within the given DNA sequence
+"""
+
+#I put \n manually so that it fits to my solution
+fasta_formatted_input = ">Rosalind_4080\nGTTACTGCCGAGTGCAAGCAACTTATTGCTGATTGGTCCGTGTAGGCTGTTAGCAGTTAGAATCTCTTAGCCTCAGCACAGTTTGTTTTCACGAAACAATGCGGAAACTATCTAGAACAACAAAAACATTATTGGAAGTTTGTGCTTCATCAATTATCGTGATAACACACCTACTAGTAGCAGTCGTGGAGCAATCGAGTCTCATGGAATGTAGCTTACGCGGTGGAACAAAATCGCCTATTAGTTGTTTGGTACAACATATTGTGCCAGCCTGCCGTTTCCTTAAAGAGGCCTAGCCACGGTTGGAACCCTCCATTTTTTTCAGAAGGGGGGTGCTGCTGCTCGGTTGTGACGCTAGGCATCTTTAAGCAACACGAATCAAAGAAGGAAATCATAGTCTATATCACACGAGTACCGCAAGCTAACTTGAGACGTCCTGAAGTTCACAGGCGTTCACTACTACCCCCCGCGGCGCTCGGATTTGCAGAAGATCGCGTGTCGTCTGGGAGACACAAAGCTCGCCAGAATAAACTAAGCAATGAGTAGGTAAGCGAAGCAGACCAGGGCCTATGCAGGGTCTATAGCCTCTAGCTAATTGGTAGAATTAACATCTATCTAACGTCATACTGATTGCTCCACGGGAATGGAAGTCCAGTGATGAGTTCATTACTGAAACCTCAGTTCGCGAGGATCACTAAGGACAATCAGTGCACGCTGGGCTCTATGCCATTGTCGATGAAAGGAGGTATTGTAACAATGTGGGATAGGCAAACTCGCGGTTGGCCGATCTTCGCAGATTTCTGAAAAAAATATCAATCACCGTTGCGCCCGTGCTTGCGTACTTTTTCCCTGGCTACGTTTCTCGGTCGACTTCGAAAGAACAG\n>Rosalind_6924\nCACCTTGACTATCCAATCACTACCAGCTAAGTACGTGGGGTTGCACCAGAACATTATGAATTCCGAGCTGATTTAGGGTGCAA"
+splitted_input = fasta_formatted_input.split("\n")
+
+#If you look input carefully you will see that
+#First index corresponds to DNA itself, wherease third index corresponds to the motif
+dna_sequence = splitted_input[1]
+motif = splitted_input[3]
+
+
+indices = ""
+dna_index = 0
+motif_index = 0
+
+#Iterate through the DNA
+for base in dna_sequence:
+    
+    #If current base is equal to the `current` base in the motif
+    #By current I mean the latest base we are looking for
+    if base == motif[motif_index]:
+        
+        motif_index += 1
+        #`dna_index + 1` is because question assumes first index is 1
+        indices += str(dna_index + 1) + " "
+        
+        #If we are out of motif base then done
+        if motif_index == len(motif):
+            break
+        
+    dna_index += 1
+print(indices)
